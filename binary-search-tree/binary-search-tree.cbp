@@ -13,6 +13,7 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-g" />
+					<Add directory="include" />
 				</Compiler>
 			</Target>
 			<Target title="Release">
@@ -22,6 +23,7 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-O2" />
+					<Add directory="include" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -32,7 +34,14 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="include/BinarySearchTreeNode.h" />
+		<Unit filename="include/BinarySearchTreeRoot.h" />
+		<Unit filename="include/DataStructureNode.h" />
+		<Unit filename="include/dataStructures.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="src/BinarySearchTreeNode.cpp" />
+		<Unit filename="src/BinarySearchTreeRoot.cpp" />
+		<Unit filename="src/DataStructureNode.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />

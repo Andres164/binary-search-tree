@@ -1,6 +1,6 @@
 #include "BinarySearchTreeRoot.h"
 
-
+BinarySearchTreeRoot::BinarySearchTreeRoot() {}
 BinarySearchTreeRoot::BinarySearchTreeRoot(int value)
     : data(value), ptr_leftNode(NULL), ptr_rightNode(NULL) {}
 
@@ -13,15 +13,13 @@ void BinarySearchTreeRoot::insertElement(int element)
         if(this->ptr_leftNode != NULL)
             this->ptr_leftNode->insertElement(element);
         else {
-            this->ptr_leftNode = new BinarySearchTreeNode();
-            this->ptr_leftNode->setData(element);
+            this->ptr_leftNode = new BinarySearchTreeNode(element);
         }
     }else {
         if(this->ptr_rightNode != NULL)
             this->ptr_rightNode->insertElement(element);
         else {
-            this->ptr_rightNode = new BinarySearchTreeNode();
-            this->ptr_rightNode->setData(element);
+            this->ptr_rightNode = new BinarySearchTreeNode(element);
         }
     }
 }
@@ -37,3 +35,9 @@ void BinarySearchTreeRoot::printElementsInOrder()
 {
 
 }
+
+
+//BSTNode
+BinarySearchTreeNode::BinarySearchTreeNode(int value)
+    : BinarySearchTreeRoot(), data(value), ptr_leftNode(NULL), ptr_rightNode(NULL) {}
+

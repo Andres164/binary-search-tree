@@ -1,9 +1,10 @@
 #pragma once
 #include "DataStructureNode.h"
 
+
 class BinarySearchTreeRoot : public DataStructureNode
 {
-protected:
+public:
     int data;
     DataStructureNode* ptr_leftNode;
     DataStructureNode* ptr_rightNode;
@@ -17,16 +18,4 @@ public:
     void removeElement(int element) override;
     int fetchElement(int element) override;
     void printElementsInOrder() override;
-};
-
-class BinarySearchTreeNode : protected BinarySearchTreeRoot
-{
-protected:
-    int data;
-    DataStructureNode* ptr_leftNode;
-    DataStructureNode* ptr_rightNode;
-public:
-BinarySearchTreeNode(int value);
-
-    friend class BinarySearchTreeRoot;
 };

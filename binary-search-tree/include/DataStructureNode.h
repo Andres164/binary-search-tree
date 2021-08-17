@@ -5,7 +5,7 @@ using namespace std;
 
 class DataStructureNode
 {
-protected:
+public:
     int data;
     DataStructureNode* ptr_previouesNode;
     DataStructureNode* ptr_nextNode;

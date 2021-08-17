@@ -34,10 +34,12 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="include/BinarySearchTreeNode.h" />
 		<Unit filename="include/BinarySearchTreeRoot.h" />
 		<Unit filename="include/DataStructureNode.h" />
 		<Unit filename="include/dataStructures.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="src/BinarySearchTreeNode.cpp" />
 		<Unit filename="src/BinarySearchTreeRoot.cpp" />
 		<Unit filename="src/DataStructureNode.cpp" />
 		<Extensions>

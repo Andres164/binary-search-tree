@@ -1,4 +1,5 @@
 #include "BinarySearchTreeRoot.h"
+#include "BinarySearchTreeNode.h"
 
 BinarySearchTreeRoot::BinarySearchTreeRoot() {}
 BinarySearchTreeRoot::BinarySearchTreeRoot(int value)
@@ -37,7 +38,4 @@ void BinarySearchTreeRoot::printElementsInOrder()
 }
 
 
-//BSTNode
-BinarySearchTreeNode::BinarySearchTreeNode(int value)
-    : BinarySearchTreeRoot(), data(value), ptr_leftNode(NULL), ptr_rightNode(NULL) {}
 

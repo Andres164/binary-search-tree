@@ -16,7 +16,7 @@ public:
 
     virtual void insertElement(int element) =0;
     virtual void removeElement(int element) =0;
-    virtual int fetchElement(int element) =0;
+    virtual void fetchElement(int element) =0;
     virtual void printElementsInOrder() =0;
 
 };

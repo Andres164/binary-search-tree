@@ -5,14 +5,23 @@ using namespace std;
 
 class DataStructureNode
 {
-public:
+protected:
     int data;
     DataStructureNode* ptr_previouesNode;
     DataStructureNode* ptr_nextNode;
 
-    virtual void setData(int newData);
+    //virtual void setData(int newData);
 public:
-    virtual int getData() =0;
+    void setData(int newData);
+    void set_ptr_previouesNode(DataStructureNode* ptr);
+    void set_ptr_nextNode(DataStructureNode* ptr);
+
+    DataStructureNode();
+    DataStructureNode(int value);
+
+    int getData();
+    DataStructureNode* get_ptr_previouesNode();
+    DataStructureNode* get_ptr_nextNode();
 
     virtual void insertElement(int element) =0;
     virtual void removeElement(int element) =0;

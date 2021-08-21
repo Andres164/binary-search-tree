@@ -10,12 +10,10 @@ protected:
     DataStructureNode* ptr_previouesNode;
     DataStructureNode* ptr_nextNode;
 
-    //virtual void setData(int newData);
-public:
     void setData(int newData);
     void set_ptr_previouesNode(DataStructureNode* ptr);
     void set_ptr_nextNode(DataStructureNode* ptr);
-
+public:
     DataStructureNode();
     DataStructureNode(int value);
 

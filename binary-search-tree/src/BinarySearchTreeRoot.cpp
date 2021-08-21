@@ -2,10 +2,10 @@
 #include "BinarySearchTreeNode.h"
 
 BinarySearchTreeRoot::BinarySearchTreeRoot()
-    : DataStructureNode() {cout << "BSTRoot created" << endl;}
+    : DataStructureNode() {}
 
 BinarySearchTreeRoot::BinarySearchTreeRoot(int value)
-    : DataStructureNode(value) {cout << "BSTRoot created" << endl;}
+    : DataStructureNode(value) {}
 
 void BinarySearchTreeRoot::insertElement(int element)
 {
@@ -37,20 +37,28 @@ void BinarySearchTreeRoot::removeElement(int element)
 }
 void BinarySearchTreeRoot::fetchElement(int element)
 {
-    /*
-    if(element < this->data && this->ptr_leftNode != NULL)
-        this->ptr_leftNode->fetchElement(element);
-    else if(element > this->data && this->ptr_rightNode != NULL)
-        this->ptr_rightNode->fetchElement(element);
-    else if(element == this->data)
+    DataStructureNode* ptr_leftNode = this->get_ptr_previouesNode();
+    DataStructureNode* ptr_rightNode = this->get_ptr_nextNode();
+    int nodeData = this->getData();
+    if(element < nodeData && ptr_leftNode != NULL)
+        ptr_leftNode->fetchElement(element);
+    else if(element > nodeData && ptr_rightNode != NULL)
+        ptr_rightNode->fetchElement(element);
+    else if(element == nodeData)
         cout << element << " Is an element of this BST" << endl;
     else
         cout << element << " Is not part of this BST" << endl;
-        */
 }
 void BinarySearchTreeRoot::printElementsInOrder()
 {
-
+    DataStructureNode* ptr_leftNode = this->get_ptr_previouesNode();
+    DataStructureNode* ptr_rightNode = this->get_ptr_nextNode();
+    int nodeData = this->getData();
+    if(ptr_leftNode != NULL)
+        ptr_leftNode->printElementsInOrder();
+    cout << nodeData << endl;
+    if(ptr_rightNode != NULL)
+        ptr_rightNode->printElementsInOrder();
 }
 
 

@@ -1,9 +1,9 @@
 #include "DataStructureNode.h"
 
 DataStructureNode::DataStructureNode()
-    : ptr_previouesNode(NULL), ptr_nextNode(NULL) { cout << "DSNode created" << endl;}
+    : ptr_previouesNode(NULL), ptr_nextNode(NULL) {}
 DataStructureNode::DataStructureNode(int value)
-    : data(value), ptr_previouesNode(NULL), ptr_nextNode(NULL) { cout << "DSNode created" << endl;}
+    : data(value), ptr_previouesNode(NULL), ptr_nextNode(NULL) {}
 
 void DataStructureNode::setData(int newData) { this->data = newData; }
 void DataStructureNode::set_ptr_previouesNode(DataStructureNode* ptr) { this->ptr_previouesNode = ptr; }

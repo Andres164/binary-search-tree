@@ -1,11 +1,28 @@
 #include "BinarySearchTreeRoot.h"
 #include "BinarySearchTreeNode.h"
 
+//Constructors
 BinarySearchTreeRoot::BinarySearchTreeRoot()
     : DataStructureNode() {}
 
 BinarySearchTreeRoot::BinarySearchTreeRoot(int value)
     : DataStructureNode(value) {}
+
+// Methods
+DataStructureNode* BinarySearchTreeRoot::getPtrToElement(int element)
+{
+    DataStructureNode* ptr_leftNode = this->get_ptr_previouesNode();
+    DataStructureNode* ptr_rightNode = this->get_ptr_nextNode();
+    int nodeData = this->getData();
+    if(element < nodeData && ptr_leftNode != NULL)
+        ptr_leftNode->fetchElement(element);
+    else if(element > nodeData && ptr_rightNode != NULL)
+        ptr_rightNode->fetchElement(element);
+    else if(element == nodeData)
+        return this;
+    else
+        return NULL;
+}
 
 void BinarySearchTreeRoot::insertElement(int element)
 {
@@ -33,7 +50,18 @@ void BinarySearchTreeRoot::insertElement(int element)
 }
 void BinarySearchTreeRoot::removeElement(int element)
 {
-
+    DataStructureNode* ptr_leftNode = this->get_ptr_previouesNode();
+    DataStructureNode* ptr_rightNode = this->get_ptr_nextNode();
+    int nodeData = this->getData();
+    DataStructureNode* ptr_elementToRemove = getPtrToElement(element);
+    if(ptr_elementToRemove != NULL)
+    {
+        ptr_elementToRemove_leftNode = ptr_elementToRemove->get_ptr_previouesNode();
+        ptr_elementToRemove_rightNode = ptr_elementToRemove->get_ptr_nextNode();
+        if()
+    }
+    else
+        cout << "the element isn't in this BST" << endl;
 }
 void BinarySearchTreeRoot::fetchElement(int element)
 {

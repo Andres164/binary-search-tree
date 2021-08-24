@@ -14,7 +14,7 @@ int main()
     ptr->insertElement(1);
     ptr->insertElement(5);
 
-    ptr->printElementsInOrder();
+    ptr->removeElement(5);
 
     return 0;
 }

@@ -4,6 +4,8 @@
 
 class BinarySearchTreeRoot : public DataStructureNode
 {
+protected:
+    virtual DataStructureNode* getPtrToElement(int element) override;
 public:
     BinarySearchTreeRoot();
     BinarySearchTreeRoot(int value);

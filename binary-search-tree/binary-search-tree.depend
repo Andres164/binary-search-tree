@@ -1,16 +1,16 @@
 # depslib dependency file v1.0
-1629344965 source:d:\repositorios\binary-search-tree\binary-search-tree\main.cpp
+1629770862 source:d:\repositorios\binary-search-tree\binary-search-tree\main.cpp
 	<iostream>
 	"dataStructures.h"
 
-1629518848 source:d:\repositorios\binary-search-tree\binary-search-tree\src\binarysearchtreeroot.cpp
+1629693991 source:d:\repositorios\binary-search-tree\binary-search-tree\src\binarysearchtreeroot.cpp
 	"BinarySearchTreeRoot.h"
 	"BinarySearchTreeNode.h"
 
-1629343844 d:\repositorios\binary-search-tree\binary-search-tree\include\binarysearchtreeroot.h
+1629599622 d:\repositorios\binary-search-tree\binary-search-tree\include\binarysearchtreeroot.h
 	"DataStructureNode.h"
 
-1629419476 d:\repositorios\binary-search-tree\binary-search-tree\include\datastructurenode.h
+1629599622 d:\repositorios\binary-search-tree\binary-search-tree\include\datastructurenode.h
 	<iostream>
 
 1629420043 source:d:\repositorios\binary-search-tree\binary-search-tree\src\datastructurenode.cpp

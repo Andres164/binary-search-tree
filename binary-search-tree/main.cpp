@@ -14,7 +14,12 @@ int main()
     ptr->insertElement(1);
     ptr->insertElement(5);
 
-    ptr->removeElement(5);
+    ptr->~DataStructureNode();
+
+    if(ptr != NULL)
+        cout << "no es nullo" << ptr->getData() << endl;
+    else
+        cout << "es nullo" << endl;
 
     return 0;
 }

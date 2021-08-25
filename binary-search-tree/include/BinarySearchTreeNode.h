@@ -1,8 +1,9 @@
 #pragma once
 #include "BinarySearchTreeRoot.h"
 
-class BinarySearchTreeNode : public BinarySearchTreeRoot
+class BinarySearchTreeNode : protected BinarySearchTreeRoot
 {
+    DataStructureNode* ptr_parentNode;
 public:
     BinarySearchTreeNode(int value);
 

@@ -50,21 +50,7 @@ void BinarySearchTreeRoot::insertElement(int element)
 }
 void BinarySearchTreeRoot::removeElement(int element)
 {
-    DataStructureNode* ptr_leftNode = this->get_ptr_previouesNode();
-    DataStructureNode* ptr_rightNode = this->get_ptr_nextNode();
-    int nodeData = this->getData();
-    DataStructureNode* ptr_elementToRemove = getPtrToElement(element);
-    if(ptr_elementToRemove != NULL)
-    {
-        DataStructureNode* ptr_elementToRemove_leftNode = ptr_elementToRemove->get_ptr_previouesNode();
-        DataStructureNode* ptr_elementToRemove_rightNode = ptr_elementToRemove->get_ptr_nextNode();
-        if(ptr_elementToRemove_leftNode == NULL && ptr_elementToRemove_rightNode == NULL)
-        {
-
-        }
-    }
-    else
-        cout << "the element isn't in this BST" << endl;
+    DataStructureNode* getPtrToElement(element);
 }
 void BinarySearchTreeRoot::fetchElement(int element)
 {
